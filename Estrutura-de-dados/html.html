@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Estrutura de Controle - Funções</title>
+    Primeira nota <input id="nota1" type="number"> <br /><br />
+    Segunda  nota <input id="nota2" type="number"> <br /><br />
+
+    <button onclick="media()">Calcular Media</button>
+
+    <script type="text/javascript">
+
+        function media(){
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+
+            var media = (nota1 + nota2) /2 ;
+
+            if(media >= 5)
+             if(media==10)
+             alert("Uau! Aprovado com Louvor!");
+            else
+             alert("Parabens, aprovado! media =" +media);
+            else
+             alert("Reprovado")
+             
+        }
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+</body>
+</html>

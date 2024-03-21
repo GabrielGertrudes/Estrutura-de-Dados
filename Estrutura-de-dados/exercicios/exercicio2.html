@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <style>
+        .idades{
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .botao{
+            height: 50px;
+            width: 200px;
+            font-weight: bolder;
+            font-size: 30px;
+        
+        }
+            </style>
+
+    <div class="idades">
+    <p>Coloque sua idade!</p>
+    <input id="idade" type="number">
+   <p> Clique no botão e verifique se sua idade é impar ou par!</p>
+    <button id="botao" class="botao" onclick="VerIdade()">Clique Aqui</button>
+</div>
+    <script>
+        function VerIdade(){
+            let idade = parseInt(document.getElementById("idade").value);
+            if(idade % 2 === 0){
+                alert("Par");
+            } else {
+                alert("Ímpar");
+            }
+        }
+    </script>
+</body>
+</html>
